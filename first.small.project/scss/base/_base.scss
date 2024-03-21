@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+// font-family: 'Playfair Display', serif;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+// body {
+//    font-family: $font-main;
+//    background-color: $dark;
+//    color: $white;
+//    font-size: 16px;
+// }
+body {
+   background-image: url(/imgs/background.jpg);
+   // background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+body::before {
+   z-index: -1;
+   content: 'НЕ ДОВОДИ ДО ЧИСЛА 69';
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   opacity: 0.05;
+   font-size: 100px;
+   font-family: $font-accent;
+}
+
+.container {
+   margin: 0 auto;
+   padding: 0px 15px;
+   max-width: 1140px;
+}
